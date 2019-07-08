@@ -1,0 +1,36 @@
+<div *ngIf="!flight">
+  Loading...
+</div>
+
+<div *ngIf="flight">
+  <hr>
+  <button routerLink="/flights/">Full List</button>
+  <div class="row flight-details">
+    <div class="col-md-11">
+      <div *ngIf="!editMode">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Flight Number: <span class="number">{{flight.number}}</span></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <p>Flight Origin: <span class="origin">{{flight.origin}}</span></p>
+            <p>Flight Departure Time: {{flight.departure | date}}</p>
+          </div>
+          <div class="col-md-5">
+            <p>Flight Destination: <span class="destination">{{flight.destination}}</span></p>
+            <p>Flight Arrival: {{flight.arrival | date}}</p>
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn btn-primary update" (click)="enterEditMode()">Edit</button>
+        </div>
+      </div>
+
+      <app-flight-update-form *ngIf="editMode" [flight]="flight"
+                              (flightUpdated)="flightUpdated()"></app-flight-update-form>
+    </div>
+  </div>
+  <hr>
+</div>

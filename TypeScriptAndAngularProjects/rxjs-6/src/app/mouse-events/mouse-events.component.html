@@ -1,0 +1,92 @@
+<h2>Functional Reactive Programming with RxJS</h2>
+<div class="alert-info">
+  <hr/>
+  <output id="output">
+    {{output}}
+  </output>
+  <hr/>
+</div>
+<form class="form-group" name="stateForm">
+  <div class="row">
+    <fieldset class="col-4">
+      <div>
+        <label class="mr-2">Demo enabled</label>
+        <input type="radio" name="enabled" [(ngModel)]="isEnabled" [value]="true"/>
+      </div>
+      <div>
+        <label class="mr-2">Demo disabled</label>
+        <input type="radio" name="enabled" [(ngModel)]="isEnabled" [value]="false"/>
+      </div>
+    </fieldset>
+    <fieldset class="col-4">
+      <div>
+        <label class="mr-2">Odd paragraphs</label>
+        <input type="radio" name="paraChoice" [(ngModel)]="mode" value="odd"/>
+      </div>
+      <div>
+        <label class="mr-2">Even paragraphs</label>
+        <input type="radio" name="paraChoice" [(ngModel)]="mode" value="even"/>
+      </div>
+    </fieldset>
+  </div>
+  <fieldset>
+    <label>Delay in sampling (millisecs)</label>
+    <div>
+      <span>100</span>
+      <input class="delay-input" type="range" [valueAsNumber]="delay" (change)="setDelay($event)"
+             min="100" max="1000"/>
+      <span>1000</span>
+    </div>
+  </fieldset>
+</form>
+
+<div id="input" class="container">
+  <p class="odd">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Curabitur et arcu sit amet turpis dictum gravida. Donec mollis
+    tincidunt enim sed facilisis. Nullam eu hendrerit magna, ac
+    efficitur enim. Curabitur eget luctus enim, at pretium sem.
+    Vestibulum pretium, velit et gravida venenatis, est nunc
+    elementum tellus, ut rutrum enim ligula vel mauris. Sed sem
+    dui, tincidunt id felis id, vulputate placerat odio. Sed
+    sit amet ultrices lacus. Quisque bibendum malesuada tellus,
+    vitae dapibus velit porttitor vel. Sed in mauris id lectus
+    placerat rutrum. Nullam ultricies lobortis eleifend. Morbi
+    eget metus luctus, viverra lorem non, ultrices elit. Integer
+    lorem purus, faucibus volutpat tempor ac, ornare
+    sollicitudin felis.
+  </p>
+  <p class="even">
+    Morbi sit amet quam ac ante fringilla lacinia vel sit amet sem.
+    Aenean euismod placerat mi eu molestie. Proin iaculis neque
+    risus, vel maximus ligula hendrerit id. In lorem dui, facilisis
+    feugiat libero vestibulum, congue lacinia sapien. Fusce lectus
+    lorem, laoreet quis posuere a, euismod in purus. In ac pretium
+    enim. Nulla neque nulla, auctor quis feugiat et, mollis ut
+    lectus. Curabitur venenatis ante vel nibh eleifend scelerisque.
+  </p>
+  <p class="odd">
+    Curabitur augue enim, finibus in dolor vitae, tempor porta
+    lectus. Donec tincidunt viverra imperdiet. Sed nec lorem id
+    purus placerat lobortis ut sed tortor. Integer aliquam erat
+    sed ante commodo auctor. Cum sociis natoque penatibus et
+    magnis dis parturient montes, nascetur ridiculus mus.
+    Pellentesque venenatis leo mi, et porttitor massa finibus nec.
+    Proin eu urna lobortis, iaculis velit at, blandit mauris.
+    Vestibulum sit amet varius augue. Nunc rhoncus purus eros,
+    at faucibus urna tincidunt et. Suspendisse convallis, nisi
+    et fermentum condimentum, velit lectus pulvinar tellus, in
+    euismod arcu nibh sed sem. Morbi sed erat finibus, iaculis
+    arcu aliquet, viverra sapien.
+  </p>
+  <p class="even">
+    Vestibulum sollicitudin sodales commodo. Donec justo mi,
+    aliquam at vulputate vel, elementum eu lorem. Cras ultricies
+    quam nec ante congue, sed aliquam lorem porttitor. Phasellus
+    venenatis blandit leo vitae consectetur. Maecenas sodales nisl
+    tellus, a commodo nisl cursus quis. Curabitur scelerisque,
+    lectus id dapibus viverra, ex risus pharetra eros, nec
+    elementum justo nunc ut justo. Aenean a orci sapien. Proin
+    tincidunt urna rhoncus rutrum pulvinar.
+  </p>
+</div>

@@ -1,0 +1,16 @@
+table {
+  border-collapse: collapse;
+}
+
+tbody > tr:nth-child(2n) {
+  background-color: cyan;
+}
+
+table, th {
+  border: 1px solid black;
+}
+
+section {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

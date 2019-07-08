@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic TypeScript Data Types</title>
+    <script src="../../node_modules/systemjs/dist/system.js"></script>
+</head>
+<body onload="runDemo()">
+    <output id="theOutput"></output>
+</body>
+<script>
+    SystemJS.import('dataTypes.js')
+        .then(function (e) {
+            e.runDemo();
+        });
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Videostore in TypeScript</title>
+    <script src="../node_modules/systemjs/dist/system.js"></script>
+</head>
+<body>
+<h1>Videostore Statement Below</h1>
+<pre id="statement">
+    </pre>
+</body>
+<script>
+    System.config({
+        packages : {
+            ".": {
+                defaultExtension: "js"
+            }
+        }
+    });
+
+    System.import('./store/main')
+        .then(function (m) {
+            m.runDemo();
+        })
+        .catch(function (err) {
+            console.error(err);
+        });
+</script>
+</html>

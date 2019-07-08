@@ -1,0 +1,9 @@
+<div>
+  <button class="btn btn-outline-primary" routerLink="user">User</button>
+  <button class="btn btn-outline-primary" routerLink="admin" [disabled]="!isAdmin">Admin</button>
+</div>
+<div>
+  <input type="checkbox" [(ngModel)]="isAdmin">
+  <label>Is Admin</label>
+</div>
+<router-outlet></router-outlet>

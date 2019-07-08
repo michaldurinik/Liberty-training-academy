@@ -1,0 +1,4 @@
+<input size="30" type="date"
+       [ngModel]="date | date:'yyyy-MM-dd'"
+       (ngModelChange)="date = $event"
+       (change)="update($event)">

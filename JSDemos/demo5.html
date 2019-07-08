@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anonymous functions</title>
+    <script>
+        function foo() {
+            console.log("Foo called");
+        }
+        var bar = function() {
+            console.log("Bar called");
+        };
+        var zed = foo;
+        function wibble(wobble) {
+            console.log("Wibble called");
+            wobble();
+        }
+        function demo() {
+            foo();
+            bar();
+            zed();
+            wibble(foo);
+        }
+    </script>
+</head>
+<body onload="demo()">
+</body>
+</html>

@@ -1,0 +1,20 @@
+<h1>Using Routing in Angular 2</h1>
+<nav>
+  <ul>
+    <li><a routerLink="/full-results" routerLinkActive="routeActive">The full set of results</a></li>
+    <li>
+      The results for the <a routerLink="/by-constituency/Belfast" routerLinkActive="routeActive">Belfast</a>,
+      <a routerLink="/by-constituency/Antrim" routerLinkActive="routeActive">Antrim</a>, or
+      <a routerLink="/by-constituency/Down" routerLinkActive="routeActive">Down</a> constituencies.
+    </li>
+    <li>
+      The results by party:
+      <div>
+        <span *ngFor="let party of partyNames">
+            <a routerLink="/by-party/{{party}}" routerLinkActive="routeActive">{{party}}</a>&nbsp;
+        </span>
+      </div>
+    </li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>

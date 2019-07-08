@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Using Parameters</title>
+    <script>
+        function bar(input1, input2, input3) {
+            console.log("Bar invoked...");
+            console.log(input1);
+            console.log(input2);
+            console.log(input3);
+        }
+        function zed() {
+            // you can pass arbitrary amount of arguments to function
+            console.log("Zed invoked...");
+            for(var x=0;x<arguments.length;x++) {
+                console.log(arguments[x]);
+            }
+        }
+        function foo() {
+            bar();
+            bar("abc");
+            bar("abc", 123);
+            bar("abc", 123, true);
+            bar("abc", 123, true, 45.6);
+            zed("abc", 123, true, 45.6);
+        }
+    </script>
+</head>
+<body onload="foo()">
+<h1 onclick="bar()">Click Me!</h1>
+</body>
+</html>

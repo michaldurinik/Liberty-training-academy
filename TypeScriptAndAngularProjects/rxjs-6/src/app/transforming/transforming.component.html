@@ -1,0 +1,45 @@
+<h2>Transforming</h2>
+<hr/>
+
+<table class="table table-bordered">
+  <tr>
+    <th width="15%">Source</th>
+    <th width="15%">Map to Square</th>
+    <th width="15%">Pairwise</th>
+    <th width="15%">Buffer Pairs and Skip 3</th>
+    <th width="15%">Scan Total</th>
+    <th width="15%">Map To Boing</th>
+  </tr>
+  <tr valign="top">
+    <td>
+      <ul>
+        <li *ngFor="let value of source">{{value}}</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li *ngFor="let value of map">{{value}}</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li *ngFor="let value of pairs">{{value | json}}</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li *ngFor="let value of buffer">{{value | json}}</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li *ngFor="let value of scan">{{value}}</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li *ngFor="let value of boing">{{value}}</li>
+      </ul>
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,32 @@
+<div *ngIf="flight">
+  <hr>
+  <div class="row">
+    <span class="col-md-1 fa fa-times-circle" (click)="clearSelected()"></span>
+
+    <div class="col-md-11">
+      <div *ngIf="!editMode">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Flight Number: {{flight.number}}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <p>Flight Origin: {{flight.origin}}</p>
+            <p>Flight Departure Time: {{flight.departure | date}}</p>
+          </div>
+          <div class="col-md-5">
+            <p>Flight Destination: {{flight.destination}}</p>
+            <p>Flight Arrival: {{flight.arrival | date}}</p>
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn btn-primary" (click)="enterEditMode()">Edit</button>
+        </div>
+      </div>
+      <app-flight-update-form *ngIf="editMode" [flight]="flight"
+                              (flightUpdated)="flightUpdated()"></app-flight-update-form>
+    </div>
+  </div>
+  <hr>
+</div>

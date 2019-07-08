@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Implicitly declared global variables</title>
+    <script>
+        function foo() {
+            var x = 123; //local variable
+            y = 456;  //global variable
+        }
+        function bar() {
+            // console.log(x);
+            console.log(y);
+        }
+    </script>
+</head>
+<body onload="foo()">
+    <h1 onclick="bar()">Click Me!</h1>
+</body>
+</html>

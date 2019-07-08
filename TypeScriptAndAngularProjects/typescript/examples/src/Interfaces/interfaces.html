@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interfaces in TypeScript</title>
+    <script src="../../node_modules/systemjs/dist/system.js"></script>
+</head>
+<body>
+<output id="output1"></output>
+<hr/>
+<output id="output2"></output>
+</body>
+<script>
+    SystemJS.import('interfaces.js')
+        .then(function (e) {
+            e.runDemo();
+        });
+</script>
+</html>

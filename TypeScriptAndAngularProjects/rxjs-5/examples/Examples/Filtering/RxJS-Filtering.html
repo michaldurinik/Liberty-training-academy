@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Functional Reactive Programming with RxJS</title>
+    <link rel="stylesheet" href="../../css/bootstrap.css"></link>
+    <script src="../../Frameworks/rx/5.0.0-rc.4/Rx.js"></script>
+    <script src="../../Frameworks/babel-core/5.8.23/browser.js"></script>
+    <script src="../../Frameworks/babel-core/5.8.23/polyfill.js"></script>
+    <script src="../../Frameworks/babel-core/5.8.23/runtime.js"></script>
+
+    <script type="text/babel" src="RxJS-Filtering.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Functional Reactive Programming with RxJS</h1>
+    <h1>Filtering Operators</h1>
+    <div id="output">
+        <table class="table-bordered">
+            <tr>
+                <th class="col-md-2">Source</th>
+                <th class="col-md-2">Filter Even Numbers</th>
+                <th class="col-md-2">Skip 4 Even Numbers</th>
+                <th class="col-md-2">Throttled</th>
+                <th class="col-md-2">Audited</th>
+                <th class="col-md-2">Debounced</th>
+            </tr>
+            <tr valign="top">
+                <td id="source"></td>
+                <td id="even"></td>
+                <td id="skip"></td>
+                <td id="throttle"></td>
+                <td id="audit"></td>
+                <td id="debounce"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

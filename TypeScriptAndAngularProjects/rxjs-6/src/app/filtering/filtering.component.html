@@ -1,0 +1,45 @@
+<h2>Filtering</h2>
+<hr/>
+
+<table class="table table-bordered">
+  <tr>
+    <th width="15%">Source</th>
+    <th width="15%">Filter Even Numbers</th>
+    <th width="15%">Skip 4 Even Numbers</th>
+    <th width="15%">Throttled</th>
+    <th width="15%">Audited</th>
+    <th width="15%">Debounced</th>
+  </tr>
+  <tr valign="top">
+    <td>
+      <ul>
+        <li *ngFor="let value of source">{{value}}</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li *ngFor="let value of even">{{value}}</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li *ngFor="let value of skip">{{value}}</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li *ngFor="let value of throttle">{{value}}</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li *ngFor="let value of audit">{{value}}</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li *ngFor="let value of debounce">{{value}}</li>
+      </ul>
+    </td>
+  </tr>
+</table>

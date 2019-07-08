@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoisting</title>
+    <script>
+        var x = 123;
+        function foo() {
+            console.log(x);
+            bar();
+            console.log(x);
+        }
+        function bar() {
+            //var x = undefined //hoisting by compiler
+            console.log(x);
+            if(6>5) {
+                var x = 456;
+            }
+            console.log(x);
+        }
+    </script>
+</head>
+<body onload="foo()">
+<h1 onclick="bar()">Click Me!</h1>
+</body>
+</html>

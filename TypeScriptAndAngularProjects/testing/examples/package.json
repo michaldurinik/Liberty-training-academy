@@ -1,0 +1,33 @@
+{
+  "name": "examples",
+  "description": "Instil package file",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "repository": "Instil",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "karma start --single-run",
+    "test-watch": "karma start"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-loader": "7.1.2",
+    "babel-polyfill": "6.26.0",
+    "babel-preset-env": "1.6.0",
+    "babel-register": "6.26.0",
+    "chai": "4.1.2",
+    "jasmine": "2.8.0",
+    "jasmine-core": "2.8.0",
+    "json-loader": "0.5.7",
+    "karma": "1.7.1",
+    "karma-babel-preprocessor": "6.0.1",
+    "karma-chrome-launcher": "2.2.0",
+    "karma-ie-launcher": "1.0.0",
+    "karma-jasmine": "1.1.0",
+    "karma-jasmine-html-reporter": "0.2.2",
+    "karma-sourcemap-loader": "0.3.7",
+    "karma-webpack": "2.0.4",
+    "sinon": "3.2.1",
+    "webpack": "3.5.5"
+  }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo of Modules</title>
+    <script src="../../node_modules/systemjs/dist/system.js"></script>
+</head>
+<body>
+<h1>Module Output Below</h1>
+<div id="target">
+</div>
+</body>
+<script>
+    System.config({
+       packages: {
+           ".": {
+               defaultExtension: "js"
+           }
+       }
+    });
+
+    System.import('stuff/main')
+        .then(function (m) {
+            m.runDemo();
+        })
+        .catch(function (err) {
+            console.error(err);
+        });
+</script>
+</html>

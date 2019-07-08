@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generics in TypeScript</title>
+    <script src="../../node_modules/systemjs/dist/system.js"></script>
+</head>
+<body>
+    <h3>Values from first list</h3>
+    <output id="output1"></output>
+    <hr/>
+    <h3>Values from second list</h3>
+    <output id="output2"></output>
+</body>
+<script>
+    SystemJS.import('generics.js')
+        .then(function (e) {
+            e.runDemo();
+        });
+</script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic TypeScript Data Types</title>
+    <script src="../../node_modules/systemjs/dist/system.js"></script>
+</head>
+<body>
+    <h3>Values from destructuring array</h3>
+    <output id="output1"></output>
+    <hr/>
+    <h3>Values from destructuring object</h3>
+    <output id="output2"></output>
+</body>
+<script>
+    SystemJS.import('destructuring.js')
+        .then(function (e) {
+            e.runDemo();
+        });
+</script>
+</html>

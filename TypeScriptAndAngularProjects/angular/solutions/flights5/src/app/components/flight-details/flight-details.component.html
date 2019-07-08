@@ -1,0 +1,10 @@
+<div *ngIf="flight">
+  <aside>
+    <span class="fa fa-times-circle" (click)="clearSelected()"></span>
+    <p>Flight Number: {{flight.number}}</p>
+    <p>Flight Origin: {{flight.origin}}</p>
+    <p>Flight Departure Time: {{flight.departure | date}}</p>
+    <p>Flight Destination: {{flight.destination}}</p>
+    <p>Flight Arrival: {{flight.arrival | date}}</p>
+  </aside>
+</div>

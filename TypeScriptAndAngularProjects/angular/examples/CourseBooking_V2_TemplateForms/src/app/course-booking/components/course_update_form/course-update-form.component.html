@@ -1,0 +1,29 @@
+<hr/>
+<h2>Use the form below to update {{ course.id }}</h2>
+<form (ngSubmit)="updateCourse()" #courseUpdateForm="ngForm">
+  <fieldset>
+    <label>Course ID:</label>
+    <input type="text" id="courseId" name="courseId"
+           required [(ngModel)]="course.id" #courseId="ngModel">
+    <span class="error-msg" [hidden]="courseId.valid || courseId.pristine">The Course ID is required</span>
+  </fieldset>
+  <fieldset>
+    <label>Course Title:</label>
+    <input type="text" id="courseTitle" name="courseTitle"
+           required [(ngModel)]="course.title" #courseTitle="ngModel">
+    <span class="error-msg" [hidden]="courseTitle.valid || courseTitle.pristine">The Course Title is required</span>
+  </fieldset>
+  <fieldset>
+    <label>Course Type:</label>
+    <select id="courseDifficulty" name="courseDifficulty" [(ngModel)]="course.difficulty">
+      <option *ngFor="let type of courseTypes" [value]="type.value">{{type.name}}</option>
+    </select>
+  </fieldset>
+  <fieldset>
+    <label>Length of Course:</label>
+    <input type="number" id="courseDuration" name="courseDuration" [(ngModel)]="course.duration" min="1" max="5">
+  </fieldset>
+  <fieldset>
+    <input type="submit" [disabled]="!courseUpdateForm.form.valid" value="Update Course"/>
+  </fieldset>
+</form>

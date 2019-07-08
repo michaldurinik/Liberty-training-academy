@@ -1,0 +1,79 @@
+<form [formGroup]="updateForm" (ngSubmit)="updateFlight()">
+  <div class="error-msgr" *ngIf="updateForm.hasError('identicalAirports')">
+    The two airports must not be identical!
+  </div>
+  <div>
+    <div class="row">
+      <fieldset class="col-md-12">
+        <label>Flight Number:</label>
+        <input type="text" class="number" formControlName="flightNumber">
+
+        <div class="error-msg"  *ngIf="flightNumber.errors">
+          <span *ngIf="flightNumber.hasError('required')">
+              The flight number is required
+          </span>
+          <span *ngIf="flightNumber.hasError('pattern')">
+              The value {{flightNumber.value}} is not three digits
+          </span>
+        </div>
+      </fieldset>
+    </div>
+    <div class="row">
+      <div class="col-md-5">
+        <fieldset>
+          <label>Flight Origin:</label>
+          <input size="30" type="text" class="origin" formControlName="flightOrigin">
+
+          <div class="error-msg" *ngIf="flightOrigin.errors">
+            <span *ngIf="flightOrigin.hasError('required')">
+                The origin airport is required
+            </span>
+            <span *ngIf="flightOrigin.hasError('pattern')">
+                The value {{flightOrigin.value}} contains characters other than letters and spaces
+            </span>
+          </div>
+        </fieldset>
+        <fieldset>
+          <label>Departure Time:</label>
+          <input size="30" type="date"
+                 [ngModel]="departureTime.value | date:'yyyy-MM-dd'"
+                 (ngModelChange)="departureTime.setValue($event)"
+                 [ngModelOptions]="{standalone: true}">
+
+          <span class="error-msg"
+                *ngIf="departureTime.errors">The origin airport is required</span>
+        </fieldset>
+      </div>
+      <div class="col-md-5">
+        <fieldset>
+          <label>Flight Destination:</label>
+          <input size="30" class="destination" type="text" formControlName="flightDestination">
+
+          <div class="error-msg" *ngIf="flightDestination.errors">
+            <span *ngIf="flightDestination.hasError('required')">
+                The destination airport is required
+            </span>
+            <span *ngIf="flightDestination.hasError('pattern')">
+                The value {{flightDestination.value}}
+                contains characters other than letters and spaces
+            </span> q
+          </div>
+        </fieldset>
+        <fieldset>
+          <label>Arrival Time:</label>
+          <app-date-picker formControlName="arrivalTime"></app-date-picker>
+
+          <span class="error-msg"
+                *ngIf="departureTime.errors">The origin airport is required</span>
+        </fieldset>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <fieldset>
+          <input class="btn btn-success update submit" type="submit" [disabled]="!updateForm.valid" value="Update Flight"/>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</form>

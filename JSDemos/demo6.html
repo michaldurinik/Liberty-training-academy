@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Constructors</title>
+    <script>
+        var myvar1 = 123;
+        var myObj = {
+            myvar1: 456,
+            myvar2: "abc"
+        };
+        var myObj2 = {
+            myvar1: 789,
+            myvar2: "def"
+        };
+        function myFunc() {
+            console.log(this.myvar1);
+        }
+        function Person(name) {
+            this.name = name;
+        }
+        function demo() {
+            myFunc();   //standard pattern (standalone)
+            myObj.myMethod = myFunc;
+            myObj.myMethod(); //method invocation pattern
+
+            var x = myObj.myMethod;
+            x();
+            var y = function() { myObj.myMethod(); };
+            y();
+
+            myFunc.apply(myObj2); //apply pattern
+
+            var z = new Person("Jane"); //constructor pattern
+            console.log(z);
+        }
+
+    </script>
+</head>
+<body onload="demo()">
+</body>
+</html>
