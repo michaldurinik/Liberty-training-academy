@@ -13,5 +13,3 @@ export class FlightDetails {
     this.arrival = new Date(obj.arrival);
   }
 }
-
-

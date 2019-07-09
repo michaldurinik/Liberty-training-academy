@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6344348-888a-4292-bd7c-52897d4374b2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../angular/examples/MemorableQuotes_V2_DI/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/examples/MemorableQuotes_V2_DI/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/services/flight.service.http.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/services/flight.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/components/flight-viewer/flight-viewer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/components/flight-viewer/flight-viewer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/components/flight-viewer/flight-viewer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/components/flight-viewer/flight-viewer.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/model/flight-details.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/model/flight-details.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular/exercises/flights/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/exercises/flights/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +37,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="56" />
+    <option name="x" value="58" />
     <option name="y" value="26" />
     <option name="width" value="1400" />
     <option name="height" value="810" />
@@ -115,7 +120,7 @@
     <option name="totallyTimeSpent" value="2396000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="26" width="1400" height="810" extended-state="1" />
+    <frame x="58" y="26" width="1400" height="810" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Learn" />

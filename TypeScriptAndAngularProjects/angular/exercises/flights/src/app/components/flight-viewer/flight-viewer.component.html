@@ -1,4 +1,4 @@
-<table>
+<table class="table table-striped table-bordered table-hover">
   <thead>
   <tr>
     <td>#</td>
@@ -12,7 +12,8 @@
     <td>{{fd.number}}</td>
     <td>{{fd.origin}}</td>
     <td>{{fd.destination}}</td>
-    <td>{{fd.departure}}</td>
-    <td>{{fd.arrival}}</td>
+    <td>{{fd.departure | date}}</td>
+    <td>{{fd.arrival | date}}</td>
   </tr>
 </table>
+

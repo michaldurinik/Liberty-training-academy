@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
 import {FlightDetails} from '../../model/flight-details';
+import {FlightService} from '../../services/flight.service';
 
 @Component({
   selector: 'app-flight-viewer',
@@ -15,8 +15,8 @@ export class FlightViewerComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  constructor(private http: HttpClient) {
-    this.http.get<FlightDetails[]>('http://localhost:8080/flights')
+  constructor(private http: FlightService) {
+    http.fetchFlights()
       .subscribe(data => this.flightDetails = data);
   }
   fun() {
