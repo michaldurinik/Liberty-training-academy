@@ -1,19 +1,19 @@
-<table class="table table-striped table-bordered table-hover">
-  <thead>
-  <tr>
-    <td>#</td>
-    <td>Origin</td>
-    <td>Destination</td>
-    <td>Departure Time</td>
-    <td>Arrival Time</td>
-  </tr>
-  </thead>
-  <tr *ngFor="let fd of flightDetails">
-    <td>{{fd.number}}</td>
-    <td>{{fd.origin}}</td>
-    <td>{{fd.destination}}</td>
-    <td>{{fd.departure | date}}</td>
-    <td>{{fd.arrival | date}}</td>
-  </tr>
-</table>
-
+<div class="container">
+  <h1 class="page-header">Flights App</h1>
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+    <tr>
+      <td>#</td>
+      <td>Origin</td>
+      <td>Destination</td>
+      <td>Departure Time</td>
+      <td>Arrival Time</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let fd of flightDetails"
+        app-flight-viewer-row [flight]="fd">
+    </tr>
+    </tbody>
+  </table>
+</div>

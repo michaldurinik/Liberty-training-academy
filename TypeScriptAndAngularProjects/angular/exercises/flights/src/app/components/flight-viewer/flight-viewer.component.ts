@@ -19,7 +19,4 @@ export class FlightViewerComponent implements OnInit {
     http.fetchFlights()
       .subscribe(data => this.flightDetails = data);
   }
-  fun() {
-    console.log(this.flightDetails);
-  }
 }
