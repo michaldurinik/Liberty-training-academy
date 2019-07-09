@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6344348-888a-4292-bd7c-52897d4374b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/model/flight-details.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../angular/examples/MemorableQuotes_V1/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/examples/MemorableQuotes_V1/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../angular/examples/MemorableQuotes_V1/src/app/components/quotes-editor/quotes-editor.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/examples/MemorableQuotes_V1/src/app/components/quotes-editor/quotes-editor.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../angular/examples/MemorableQuotes_V1/src/app/components/quotes-editor/quotes-editor.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/examples/MemorableQuotes_V1/src/app/components/quotes-editor/quotes-editor.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../angular/exercises/flights/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/exercises/flights/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular/examples/MemorableQuotes_V2_DI/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/examples/MemorableQuotes_V2_DI/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/components/flight-viewer/flight-viewer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/components/flight-viewer/flight-viewer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/components/flight-viewer/flight-viewer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/components/flight-viewer/flight-viewer.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/model/flight-details.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/model/flight-details.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
