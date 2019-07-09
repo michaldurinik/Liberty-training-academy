@@ -1,2 +1,10 @@
 <h1>Here are the flights</h1>
-<pre>{{flights}}</pre>
+<table>
+<tr *ngFor="let fd of flightDetails">
+  <td>{{fd.number}}</td>
+  <td>{{fd.origin}}</td>
+  <td>{{fd.destination}}</td>
+  <td>{{fd.departure}}</td>
+  <td>{{fd.arrival}}</td>
+</tr>
+</table>
