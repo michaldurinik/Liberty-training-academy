@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+    function demo() {
+        function addToList(item) {
+            var newNode = document.createElement("li");
+            newNode.appendChild(document.createTextNode(item));
+            theList.appendChild(newNode);
+        }
+        function addToTable(item) {
+            var newRow = document.createElement("tr");
+            var newCell = document.createElement("td");
+            newCell.appendChild(document.createTextNode(item));
+            newRow.appendChild(newCell);
+            theTable.appendChild(newRow);
+        }
+        var data = ["abc","def","ghi","jkl"];
+        var theList = document.getElementById("myList");
+        var theTable = document.getElementById("myTable");
+        for(var x=0;x<data.length;x++) {
+            var item = data[x];
+            addToList(item);
+            addToTable(item);
+        }
+    }
+    </script>
+</head>
+<body onload="demo()">
+<ul id="myList">
+</ul>
+
+</body>
+</html>

@@ -2,20 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6344348-888a-4292-bd7c-52897d4374b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/components/flight-viewer-row/flight-viewer-row.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/components/flight-viewer-row/flight-viewer-row.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/components/flight-viewer-row/flight-viewer-row.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../courses/.idea/courses.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../courses/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../courses/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../courses/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../courses/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../angular/examples/CourseBooking_V1_Rest/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/examples/CourseBooking_V1_Rest/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/components/flight-viewer/flight-viewer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/components/flight-viewer/flight-viewer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/components/flight-viewer/flight-viewer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../angular/exercises/flights/src/app/components/flight-viewer/flight-viewer.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../courses/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../courses/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JSDemo2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JSDemo2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JSDemo2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JSDemo2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JSDemo2/JSDemo2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JSDemo2/classicOO.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JSDemo2/domManipulation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JSDemo2/functionalCoding.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JSDemo2/inheritance.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../JSDemo2/prototypeOO.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../typescript/examples/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSDemos/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSDemos/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSDemos/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSDemos/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSDemos/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSDemos/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSDemos/JSDemos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSDemos/JSDemos.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSDemos/demo1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSDemos/demo1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSDemos/demo2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSDemos/demo2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSDemos/demo3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSDemos/demo3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSDemos/demo4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSDemos/demo4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSDemos/demo5.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSDemos/demo5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSDemos/demo6.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSDemos/demo6.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../typescript/examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../typescript/examples/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,8 +51,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="46" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="39" />
     <option name="y" value="21" />
     <option name="width" value="1400" />
     <option name="height" value="810" />
@@ -118,15 +127,15 @@
       <option name="presentableId" value="Default" />
       <updated>1562526174780</updated>
       <workItem from="1562526176209" duration="49000" />
-      <workItem from="1562593376479" duration="3767000" />
+      <workItem from="1562593376479" duration="3786000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3816000" />
+    <option name="totallyTimeSpent" value="3835000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="46" y="21" width="1400" height="810" extended-state="1" />
+    <frame x="39" y="21" width="1400" height="810" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Learn" />
@@ -147,7 +156,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3293944" />
+      <window_info active="true" anchor="bottom" x="97" y="416" width="1340" height="223" id="Terminal" order="10" type="WINDOWED" visible="true" weight="0.3293944" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />

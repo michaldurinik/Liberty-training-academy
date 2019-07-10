@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functional Coding</title>
+    <script>
+        function wrapInH1(text) {
+            return "<h1>" + text + "</h1>";
+        }
+        function wrapInH2(text) {
+            return "<h2>" + text + "</h2>";
+        }
+        function wrapInTag(tagName, text) {
+            var openingTag = '<' + tagName + '>';
+            var closingTag = '</' + tagName + '>';
+            return openingTag + text + closingTag
+        }
+        function buildTagWrapper(tagName) {                 //functional prog
+            var openingTag = '<' + tagName + '>';
+            var closingTag = '</' + tagName + '>';
+            return function(text) {
+                return openingTag + text + closingTag;
+            }
+        }
+
+        function demo() {
+            document.write(wrapInH1("Homer"));
+            document.write(wrapInH2("Marge"));
+            document.write(wrapInTag("h3", "Bart"));
+            document.write(wrapInTag("h4", "Liza"));
+
+            // functional prog
+            var wrapInMark = buildTagWrapper('Mark');
+            var wrapInItalics = buildTagWrapper('i');
+
+            document.write(wrapInMark("Maggie"));
+            document.write(wrapInMark("Itchy"));
+            document.write(wrapInItalics("Flanders"));
+            document.write(wrapInItalics("Scratchy"));
+        }
+    </script>
+</head>
+<body onload="demo()">
+
+</body>
+</html>

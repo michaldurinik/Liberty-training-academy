@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inheritance</title>
+    <script>
+
+        function Employee() {
+            this.awardBonus = function(bonus) { console.log("gief bonus called"); };
+            this.takeHolidays = function(holiday) { console.log("take holiday called"); };
+        }
+
+        function Manager() {
+            this.raiseBudget = function(raise) { console.log("raise budget called"); };
+            this.promoteStaff = function(staff) { console.log("promtoe staff called"); };
+        }
+
+        Manager.prototype = new Employee(); //works like inheritance
+
+        function demo() {
+            var mgr = new Manager();
+            mgr.awardBonus(12);
+            mgr.takeHolidays(34);
+            mgr.raiseBudget(56);
+            mgr.promoteStaff(78);
+        }
+
+    </script>
+</head>
+<body onload="demo()">
+</body>
+</html>

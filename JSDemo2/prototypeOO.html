@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Classic OO in JS</title>
+    <script>
+        function InstilEmployee(name, age, salary) {
+            this.name = name;
+            this.age = age;
+            this.salary = salary;
+        }
+        InstilEmployee.prototype.toString = function() {
+            return this.name + " of age " + this.age + " earning " + this.salary;
+        };
+        InstilEmployee.prototype.awardBonus = function(bonus) { //these functions get created in every new employee call
+            this.salary += bonus;
+        };
+
+        var e1;
+        var e2;
+        var salary = 99;
+
+        function start() {
+            e1 = new InstilEmployee("Dave", 25, 30000.0);
+            e2 = new InstilEmployee("Jane", 32, 50000.0);
+            console.log("-->" + e1); //"-->" invoke toString
+            console.log("-->" + e2);
+            e1.awardBonus(500);
+            e2.awardBonus(750);
+            console.log("-->" + e1);
+            console.log("-->" + e2);
+            var f = e1.awardBonus; //variable f points to "class method" directly, but only to global scope
+            f(1000);
+            console.log(salary);
+        }
+    </script>
+</head>
+<body onload="start()">
+</body>
+</html>
