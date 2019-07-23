@@ -1,4 +1,4 @@
-package com.lit.demos;
+package com.lit.fp;
 
 import java.util.Arrays;
 import java.util.List;
