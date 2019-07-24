@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 	xmlns="http://www.springframework.org/schema/beans" 
+				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				xmlns:context="http://www.springframework.org/schema/context"		
+				xsi:schemaLocation="http://www.springframework.org/schema/beans 
+									http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+			
+	<bean id="stockMock" class="demos.spring.testing.StockCheckEngineMock">
+		<constructor-arg index="0">
+			<map>
+				<entry key="AB12" value="10"/>
+				<entry key="CD34" value="20"/>
+				<entry key="EF56" value="30"/>
+				<entry key="GH78" value="40"/>
+			</map>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="paymentMock" class="demos.spring.testing.PaymentEngineMock">
+	</bean>
+	
+	<bean id="pricingMock" class="demos.spring.testing.PricingEngineMock">
+		<constructor-arg index="0">
+			<list>
+				<value>1.20</value>
+				<value>3.40</value>
+				<value>5.60</value>
+				<value>7.80</value>
+			</list>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="shop" class="demos.spring.testing.Shop">
+		<property name="paymentEngine">
+			<ref bean="paymentMock"/>
+		</property>
+		<property name="stockCheckEngine">
+			<ref bean="stockMock"/>
+		</property>
+		<property name="pricingEngine">
+			<ref bean="pricingMock"/>
+		</property>
+	</bean>
+</beans>

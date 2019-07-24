@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.instil'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework:spring-core:5.1.0.RELEASE'
+    compile 'org.springframework:spring-jdbc:5.1.0.RELEASE'
+    compile 'org.springframework:spring-context:5.1.0.RELEASE'
+    compile 'mysql:mysql-connector-java:8.0.12'
+    compile group: 'junit', name: 'junit', version: '4.12'
+    compile 'com.kenai.nbpwr:org-apache-commons-dbcp:1.2.2-201002241055'
+}

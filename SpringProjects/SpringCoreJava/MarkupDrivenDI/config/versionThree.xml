@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 	xmlns="http://www.springframework.org/schema/beans" 
+				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 		
+				xsi:schemaLocation="http://www.springframework.org/schema/beans 
+					http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+				
+	<bean id="stockMockOne" class="demos.v3.StockCheckEngineMock">
+	</bean>
+	
+	<bean id="paymentMockOne" class="demos.v3.PaymentEngineMock">
+	</bean>
+	
+	<bean id="pricingMockOne" class="demos.v3.PricingEngineMock">
+		<property name="minimumDiscountAmount">
+			<value>500</value>
+		</property>
+		<property name="percentageDiscount">
+			<value>10</value>
+		</property>
+	</bean>
+	
+	<bean id="shopWithMocks" class="demos.v3.Shop">
+		<property name="paymentEngine">
+			<ref bean="paymentMockOne"/>
+		</property>
+		<property name="stockCheckEngine">
+			<ref bean="stockMockOne"/>
+		</property>
+		<property name="pricingEngine">
+			<ref bean="pricingMockOne"/>
+		</property>
+	</bean>
+</beans>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Spring Markup Driven Exercises</title>
+    </head>
+    <body>
+        <h1>Spring Markup Driven Exercises</h1>
+        <p>
+            Examine the package <i>exercise.start</i>. This contains the flight booking system we used on 
+            previous exercises, except that now we are using a <b>ClassPathXmlApplicationContext</b> which 
+            reads from the file <b>exerciseStart.xml</b>. At the moment all that is being done in the XML 
+            file is enabling component scanning - all DI is still done via annotations.
+        </p>
+        <h2>Exercise One</h2>
+        <p>
+        		Introduce XML based dependency injection for:
+        </p>
+        <ol>
+        		<li>Injecting the <b>BookingControllerMock</b> into the <b>FlightBookingGUI</b></li>
+        		<li>Injecting the <b>FlightSearchEngineMock</b> and <b>FlightBookingServiceMock</b> into the <b>BookingControllerMock</b> </li>
+        </ol>
+        <h2>Exercise Two</h2>
+        <p>
+            Extend your solution to Exercise One by introducing XML based dependency injection for the <b>FlightBookingGUI</b> constructor. This should remove all 
+            DI related annotations from the code and enable you to take component scanning 
+            out of the XML file.
+        </p>
+    </body>
+</html>

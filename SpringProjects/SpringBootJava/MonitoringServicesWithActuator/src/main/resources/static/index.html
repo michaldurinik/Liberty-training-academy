@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="actuatorApp">
+    <head>
+        <title>Hello Spring Boot Actuator</title>
+        <script src="angular.min.js"></script>
+        <script src="index.js"></script>
+        <link rel="stylesheet" type="text/css" href="defaultStyle.css">
+    </head>
+    <body ng-controller="ActuatorController">
+        <h1>Hello Spring Boot Actuator</h1>
+        <h2>The Applications Health</h2>
+        <p>
+        		At the moment the application is <b>{{ health }}</b>
+        </p>
+        <p>
+        		The custom value is <b>{{ custom }}</b>
+        </p>
+        <h2>The Available Metrics</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="metric in metrics">
+                    <td>{{ metric.name }}</td>
+                    <td>{{ metric.value }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>The Application Trace</h2>
+        <ol>
+        		<li ng-repeat="trace in tracings track by $index">{{ trace }}</li>
+        </ol>
+    </body>
+</html>

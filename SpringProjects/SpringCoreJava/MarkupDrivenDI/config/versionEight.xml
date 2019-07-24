@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans 
+					http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	<bean id="pricingEngine" class="demos.v8.PricingEngineMock">
+		<property name="minimumDiscountAmount">
+			<value>500</value>
+		</property>
+		<property name="percentageDiscount">
+			<value>10</value>
+		</property>
+	</bean>
+	<bean id="paymentEngine" class="demos.v8.PaymentEngineMock"/>
+	<bean id="stockCheckEngine" class="demos.v8.StockCheckEngineMock"/>
+	<bean id="shopWithMocks" class="demos.v8.Shop" autowire="byName"/>
+</beans>

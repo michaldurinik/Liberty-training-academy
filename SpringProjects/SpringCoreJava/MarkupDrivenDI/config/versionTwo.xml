@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 	xmlns="http://www.springframework.org/schema/beans" 
+				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 		
+				xsi:schemaLocation="http://www.springframework.org/schema/beans 
+					http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+				
+	<bean id="paymentImplOne" class="demos.v2.PaymentEngineImpl">
+		<constructor-arg index="0">
+			<value>www9.nowhere.invalid</value>
+		</constructor-arg>
+		<constructor-arg index="1">
+			<value>5000</value>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="stockMockOne" class="demos.v2.StockCheckEngineMock">
+	</bean>
+	
+	<bean id="paymentMockOne" class="demos.v2.PaymentEngineMock">
+	</bean>
+	
+	<bean id="pricingMockOne" class="demos.v2.PricingEngineMock">
+		<constructor-arg index="0">
+			<value>500</value>
+		</constructor-arg>
+		<constructor-arg index="1">
+			<value>10</value>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="shopWithMocks" class="demos.v2.Shop">
+		<constructor-arg index="2">
+			<ref bean="paymentMockOne"/>
+		</constructor-arg>
+		<constructor-arg index="1">
+			<ref bean="stockMockOne"/>
+		</constructor-arg>
+		<constructor-arg index="0">
+			<ref bean="pricingMockOne"/>
+		</constructor-arg>
+	</bean>
+</beans>

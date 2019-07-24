@@ -1,0 +1,115 @@
+<html>
+	<head>
+		<title>Basic Spring Dependency Injection</title>
+	</head>
+	<body>
+		<h1>Basic Spring Dependency Injection</h1>
+		<h3>
+			This project illustrates the basic Spring syntax for dependency injection. In the package 
+			<em>demos.v1</em> we have some code that contains encapsulated dependencies. The packages 
+			<em>demos.v2</em> to <em>demos.v10</em> externalize the dependencies in various ways. The 
+			table below describes the techniques used in each package.
+		</h3>
+		<table rules="all">
+			<tr style="color:white;background-color:navy">
+				<th>Package Name</th><th>Configuration File</th><th>Description</th>
+			</tr>
+			<tr>
+				<td>demos.v1</td>
+				<td>N/A</td>
+				<td>
+					The <em>Program</em> class creates and uses a <em>Shop</em> object, which in turn creates and uses a 
+					<em>PricingEngine</em>, <em>PaymentEngine</em> and <em>StockCheckEngine</em>. It is not possible to use 
+					or test the shop without its three dependencies, and the dependencies are all on concrete types.
+				</td>
+			</tr>
+			<tr style="background-color:cyan;">
+				<td>demos.v2</td>
+				<td>config/versionTwo.xml</td>
+				<td>
+					We use Spring to introduce dependency injection by:
+					<ul>
+						<li>Splitting each dependency into an interface and basic implementation</li>
+						<li>Injecting the dependencies into the <em>Shop</em> via constructor arguments</li>
+						<li>Creating a Spring 'wiring' file to manage the dependencies</li>
+						<li>In the <em>main</em> method of <em>Tester</em> using Spring to build the shop</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>demos.v3</td>
+				<td>config/versionThree.xml</td>
+				<td>
+					This is identical to <em>demos.v2</em> except that we use properties for dependency injection 
+					rather than constructor arguments.
+				</td>
+			</tr>
+			<tr style="background-color:cyan;">
+				<td>demos.v4</td>
+				<td>config/versionFour.xml</td>
+				<td>
+					This is identical to <em>demos.v3</em>, except that we nest the bean declarations in the configuration 
+					file.
+				</td>
+			</tr>
+			<tr>
+				<td>demos.v5</td>
+				<td>config/versionFive.xml</td>
+				<td>
+					This example illustrates how Spring can cope with existing static factory methods. Assume we 
+					have the class <em>PaymentEngineImpl</em>, instances of which can only be created via the static 
+					method <em>instance</em>. The class <em>PaymentImplTest</em> shows how to build and use an instance 
+					of this class via the <em>factory-method</em> attribute of the <em>bean</em> element. 
+				</td>
+			</tr>
+			<tr style="background-color:cyan;">
+				<td>demos.v6</td>
+				<td>config/versionSix.xml</td>
+				<td>
+					This example is similar to <em>demos.v5</em>, except that a <em>PaymentEngineImpl</em> object can 
+					only be created by first creating a <em>PaymentEngineFactory</em> and calling its <em>instance</em> 
+					method. This shows that Spring supports factory classes as well as factory methods.
+				</td>
+			</tr>
+			<tr>
+				<td>demos.v7</td>
+				<td>config/versionSeven.xml</td>
+				<td>
+					This example is identical to previous ones, except that we use <i>autowiring by type</i> instead of 
+					explicitly specifying dependencies.
+				</td>
+			</tr>
+			<tr style="background-color:cyan;">
+				<td>demos.v8</td>
+				<td>config/versionEight.xml</td>
+				<td>
+					This example is identical to <em>demos.v7</em>, except that we use <i>autowiring by name</i>.
+				</td>
+			</tr>
+			<tr>
+				<td>demos.v9</td>
+				<td>config/versionNine.xml</td>
+				<td>
+					This example shows how Spring lets you create and inject collections of values. We wish to extend our 
+					<em>PricingEngineMock</em> and <em>StockCheckEngineMock</em> classes so that, instead of returning dummy 
+					values, they use test values from collections injected by Spring. 
+				</td>
+			</tr>
+			<tr style="background-color:cyan;">
+				<td>demos.v10</td>
+				<td>config/versionTen.xml</td>
+				<td>
+					This example shows how one Spring bean declaration can inherit from another. The standard <em>shopWithMocks</em> bean is 
+					now declared as abstract and used as the basis for <em>testShop1</em>, <em>testShop2</em> and <em>testShop3</em>.
+				</td>
+			</tr>
+			<tr>
+				<td>demos.v11</td>
+				<td>config/versionEleven.xml</td>
+				<td>
+					Shows how Spring Expression Language (Spring EL) can be used to simplify the bean configuration file. 
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

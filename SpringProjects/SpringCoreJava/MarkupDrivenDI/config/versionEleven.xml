@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	<bean id="dataSource" class="demos.v11.SampleDataSource"/>
+	
+	<bean id="pricingEngine" class="demos.v11.PricingEngineMock">
+		<property name="minimumDiscountAmount" value="#{dataSource.discountAmount}"/>
+		<property name="percentageDiscount" value="#{dataSource.percentageDiscount * 2}"/> 
+		<property name="prices" value="#{dataSource.prices}"/> 
+	</bean>
+	
+	<bean id="stockCheckEngine" class="demos.v11.StockCheckEngineMock">
+		<property name="testData" value="#{dataSource.buildStockData()}"/>
+	</bean>
+	
+	<bean id="paymentEngine" class="demos.v11.PaymentEngineMock">
+		<constructor-arg index="0" value="#{T(demos.v11.SampleDataSource).buildBannedCards()}"/>
+	</bean>
+	
+	<bean id="shopWithMocks" class="demos.v11.Shop">
+		<property name="paymentEngine" value="#{paymentEngine}"/>
+		<property name="stockCheckEngine" value="#{stockCheckEngine}"/>
+		<property name="pricingEngine" value="#{pricingEngine}"/>
+		<property name="shopName" value="#{dataSource.CEO.toUpperCase() == 'STEVE JOBS' ? 'Apple' : 'Microsoft'}"/>
+		<property name="openDuringWeekends" value="#{dataSource.openDays matches '.*(Saturday|Sunday).*'}"/> 
+		<property name="juniorStaff" value="#{dataSource.staff.?[salary lt 50000.0]}"/> 
+		<property name="seniorStaff" value="#{dataSource.staff.?[salary ge 50000.0]}"/> 
+		<property name="staffNames" value="#{dataSource.staff.![name]}"/> 
+	</bean>
+</beans>

@@ -1,0 +1,18 @@
+package demos.v9;
+
+import java.util.Map;
+
+public class StockCheckEngineMock implements StockCheckEngine {
+    private Map<String, Integer> testData;
+
+    public void setTestData(Map<String, Integer> testData) {
+        this.testData = testData;
+    }
+
+    public int check(String itemNo) {
+        if (!testData.containsKey(itemNo)) {
+            throw new IllegalArgumentException(itemNo + " does not exist in test map");
+        }
+        return testData.get(itemNo);
+    }
+}

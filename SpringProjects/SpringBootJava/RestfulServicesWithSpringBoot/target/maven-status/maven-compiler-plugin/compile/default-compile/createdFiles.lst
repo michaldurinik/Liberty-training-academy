@@ -1,0 +1,10 @@
+demos\spring\boot\rest\model\CourseList.class
+demos\spring\boot\rest\basic\CoursesController.class
+demos\spring\boot\rest\SpringBootConfig.class
+demos\spring\boot\rest\model\CourseDifficulty.class
+demos\spring\boot\rest\DeletionException.class
+demos\spring\boot\rest\extended\CoursesController.class
+demos\spring\boot\rest\model\Course.class
+demos\spring\boot\rest\modern\CoursesController.class
+demos\spring\boot\rest\StartupSpringBoot.class
+demos\spring\boot\rest\ExceptionResolver.class
