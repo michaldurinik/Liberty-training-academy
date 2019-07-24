@@ -1,4 +1,4 @@
-package com.lit.academy.com.lit.academy.services;
+package com.lit.academy.services;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
