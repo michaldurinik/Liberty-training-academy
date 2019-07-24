@@ -2,10 +2,7 @@ package com.lit.academy.services;
 
 import com.lit.academy.model.Person;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -48,5 +45,14 @@ public class PersonService {
 
         return result.map(ResponseEntity::ok)
                 .orElse(notFound().build());
+    }
+
+    @RequestMapping(
+            method= RequestMethod.PUT,
+            consumes = "application/json"
+    )
+    public String addPerson(@RequestBody Person newPerson) {
+        people.add(newPerson);
+        return "done";
     }
 }
