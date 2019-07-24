@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bcbcc31-9575-4b6f-80cd-75292d75ff31" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../JavaDemos/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JavaDemos/src/com/lit/gui/MyGui.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JavaDemos/src/com/lit/gui/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaLanguageExercises/src/imperial/currency/start/AmountTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../JavaDemos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaDemos/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JavaDemos/src/com/lit/demos/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaDemos/src/com/lit/fp/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaLanguageExercises/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaLanguageExercises/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaLanguageExercises/out/production/JavaLanguageExercises/streams/movies/start/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaLanguageExercises/out/production/JavaLanguageExercises/streams/movies/start/Program.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -35,11 +32,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/streams/parallel/Program.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/generics/wildcards/WildcardsDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/generics/pair/Pair.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/generics/pair/Program.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="57" lean-forward="true" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -49,14 +73,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="y" value="2" />
     <option name="width" value="1932" />
@@ -79,6 +96,34 @@
               <item name="JavaLanguageExamples" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaLanguageExamples" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaLanguageExamples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaLanguageExamples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="generics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaLanguageExamples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaLanguageExamples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="generics" type="462c0819:PsiDirectoryNode" />
+              <item name="pair" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaLanguageExamples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaLanguageExamples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="generics" type="462c0819:PsiDirectoryNode" />
+              <item name="wildcards" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaLanguageExamples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaLanguageExamples" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="generics" type="462c0819:PsiDirectoryNode" />
+              <item name="wildcards" type="462c0819:PsiDirectoryNode" />
+              <item name="WildcardsDemo.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
               <item name="JavaLanguageExamples" type="b2602c69:ProjectViewProjectNode" />
@@ -112,7 +157,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../purchase-order-gui" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../TypeScriptAndAngularProjects/angular/solutions/flights8b" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -159,17 +204,18 @@
       <option name="presentableId" value="Default" />
       <updated>1563801241527</updated>
       <workItem from="1563801246806" duration="2146000" />
-      <workItem from="1563885502454" duration="589000" />
+      <workItem from="1563885502454" duration="2822000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2735000" />
+    <option name="totallyTimeSpent" value="4968000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="2" width="1932" height="1045" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25267094" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2521322" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -214,6 +260,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generics/wildcards/WildcardsDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generics/pair/Pair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generics/pair/Program.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="57" lean-forward="true" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
         </state>
       </provider>
     </entry>

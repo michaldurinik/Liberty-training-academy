@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="227f00c6-9491-41a9-aaed-5af31368a7e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../JavaDemos/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JavaDemos/src/com/lit/gui/MyGui.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JavaDemos/src/com/lit/gui/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imperial/currency/start/AmountTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../JavaDemos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaDemos/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JavaDemos/src/com/lit/demos/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JavaDemos/src/com/lit/fp/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JavaLanguageExamples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaLanguageExamples/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaLanguageExercises/streams/movies/start/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaLanguageExercises/streams/movies/start/Program.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,46 +16,33 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/streams/movies/shared/Movie.java">
+        <entry file="file://$PROJECT_DIR$/src/imperial/currency/start/Amount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/imperial/currency/start/Unit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/streams/movies/shared/Provider.java">
+        <entry file="file://$PROJECT_DIR$/src/imperial/currency/start/AmountTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/streams/movies/shared/Rating.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/streams/movies/start/Program.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+            <state relative-caret-position="289">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,6 +52,13 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
@@ -74,17 +66,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/streams/movies/start/Program.java" />
+        <option value="$PROJECT_DIR$/src/imperial/currency/start/AmountTest.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="y" value="2" />
     <option name="width" value="1932" />
@@ -114,29 +100,13 @@
               <item name="JavaLanguageExercises" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaLanguageExercises" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="streams" type="462c0819:PsiDirectoryNode" />
+              <item name="currency" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaLanguageExercises" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaLanguageExercises" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="streams" type="462c0819:PsiDirectoryNode" />
-              <item name="movies" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaLanguageExercises" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaLanguageExercises" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="streams" type="462c0819:PsiDirectoryNode" />
-              <item name="movies" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaLanguageExercises" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaLanguageExercises" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="streams" type="462c0819:PsiDirectoryNode" />
-              <item name="movies" type="462c0819:PsiDirectoryNode" />
+              <item name="currency" type="462c0819:PsiDirectoryNode" />
               <item name="start" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -169,7 +139,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Program">
+  <component name="RunManager" selected="JUnit.AmountTest">
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="streams.movies.start.Program" />
       <module name="JavaLanguageExercises" />
@@ -179,6 +149,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AmountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaLanguageExercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="imperial.currency.start.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="imperial.currency.start" />
+      <option name="MAIN_CLASS_NAME" value="imperial.currency.start.AmountTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -200,6 +185,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AmountTest" />
         <item itemvalue="Application.Program" />
         <item itemvalue="JUnit.CellTest" />
       </list>
@@ -216,7 +202,7 @@
       <option name="presentableId" value="Default" />
       <updated>1563794745006</updated>
       <workItem from="1563794748398" duration="2642000" />
-      <workItem from="1563885509666" duration="589000" />
+      <workItem from="1563885509666" duration="2440000" />
     </task>
     <servers />
   </component>
@@ -224,14 +210,17 @@
     <history-entry file="CellTest - 2019.07.22 at 12h 26m 54s.xml">
       <configuration name="CellTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AmountTest - 2019.07.23 at 15h 07m 22s.xml">
+      <configuration name="AmountTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3231000" />
+    <option name="totallyTimeSpent" value="5082000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="2" width="1932" height="1045" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25267094" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2521322" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -295,7 +284,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/streams/movies/start/Program.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="408">
           <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -307,6 +296,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imperial/currency/start/Amount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imperial/currency/start/Unit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imperial/currency/start/AmountTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
