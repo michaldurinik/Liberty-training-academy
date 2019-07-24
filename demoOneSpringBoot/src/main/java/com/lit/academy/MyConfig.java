@@ -14,7 +14,7 @@ public class MyConfig {
         List<Person> people = new ArrayList<>();
             people.add(new Person("Dude", 35));
             people.add(new Person("John", 27));
-            people.add( new Person("Karen", 68));
+            people.add(new Person("Karen", 68));
             return people;
     }
 }
