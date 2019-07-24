@@ -13,6 +13,8 @@ public class UnitsConfig {
     public List<Unit> function() {
         List<Unit> units = new ArrayList<>();
         units.add(new Unit("Terran", "worker", "SCV"));
+        units.add(new Unit("Protoss", "melee", "Zealot"));
+        units.add(new Unit("Zerg", "flying", "Mutalisk"));
         return units;
     }
 }
